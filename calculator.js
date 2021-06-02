@@ -1,10 +1,14 @@
-let arr =[2,5,4,6];
+let arr =[5,4,2];
 
-function addition(arr){
+function subtraction(arr){
     let total =0
-    arr.forEach((item)=>{
-        total +=item
+    arr.forEach((item,index)=>{
+        if(index != 0){
+            total -=item
+        }else{
+            total = item
+        } 
     })
     console.log(total)
 }
-addition(arr)
+subtraction(arr)
